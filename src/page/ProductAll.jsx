@@ -27,8 +27,8 @@ const ProductAll = () => {
 	};
 
 	useEffect(() => {
-		getProducts();
-	}, [query]); //키워드를 입력했을때마다 getProducts함수 실행
+		getProducts(setQuery);
+	}); //키워드를 입력했을때마다 getProducts함수 실행
 
 	return (
 		<div>
